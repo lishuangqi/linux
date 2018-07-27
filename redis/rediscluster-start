@@ -1,0 +1,11 @@
+#!/bin/bash
+path=$(cd `dirname $0`;pwd)
+cd $path/redis-3.2.1/bin/
+
+./redis-server ../../7000/redis.conf
+
+./redis-server ../../7001/redis.conf
+
+./redis-server ../../7002/redis.conf
+
+./redis-server ../../7003/redis.conf

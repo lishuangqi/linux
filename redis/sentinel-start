@@ -1,0 +1,9 @@
+#!/bin/bash
+path=$(cd `dirname $0`;pwd)
+cd $path/redis-3.2.1/bin/
+
+./redis-sentinel ../../27100/sentinel.conf
+
+./redis-sentinel ../../27101/sentinel.conf
+
+./redis-sentinel ../../27102/sentinel.conf
